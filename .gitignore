@@ -1,0 +1,6 @@
+# Arquivos de vídeo grandes
+*.mov
+*.mp4
+.wrangler/
+node_modules/
+.DS_Store
