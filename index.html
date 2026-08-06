@@ -275,7 +275,8 @@ h2.title{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(
 .depoimentos{background:var(--cream);padding:94px 0;border-top:1px solid rgba(14,51,36,.08)}
 .depo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
 .depo-grid .depo-item:nth-child(n+5){grid-column:span 1}
-.depo-item{position:relative;overflow:hidden;border-radius:6px;display:flex;align-items:center;justify-content:center;min-height:300px}
+.depo-item{display:flex;flex-direction:column;gap:12px}
+.depo-item video{position:relative;overflow:hidden;border-radius:6px;display:flex;align-items:center;justify-content:center;min-height:300px;width:100%}
 @media(max-width:1200px){.depo-grid{grid-template-columns:repeat(2,1fr)}}
 .depo-item img,.depo-item video{width:100%;height:100%;object-fit:cover;display:block}
 .depo-caption{margin-top:14px;font-size:14px;color:var(--muted);font-weight:300;line-height:1.5;text-align:center}
@@ -658,40 +659,47 @@ footer .copy{padding-top:22px;font-size:12.5px;color:rgba(245,237,224,.5);displa
       <p>Histórias reais de quem viveu a transformação do Método RESET</p>
     </div>
     <div class="depo-grid">
-      <div class="depo-item depo-video">
-        <video controls>
-          <source src="assets/depoimento-2.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-item depo-video">
-        <video controls>
-          <source src="assets/depoimento-3.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-item depo-video">
-        <video controls>
-          <source src="assets/depoimento-4.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-item depo-video">
-        <video controls>
-          <source src="assets/depoimento-5.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-item depo-video">
-        <video controls>
-          <source src="assets/depoimento-6.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-item depo-video">
-        <video controls>
-          <source src="assets/depoimento-7.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="depo-item depo-video">
+      <div class="depo-item">
         <video controls>
           <source src="assets/depoimento-8.mp4" type="video/mp4">
         </video>
+        <div class="depo-caption">André Silva<br><small>CEO Invenzi</small></div>
+      </div>
+      <div class="depo-item">
+        <video controls>
+          <source src="assets/depoimento-2.mp4" type="video/mp4">
+        </video>
+        <div class="depo-caption">Nome<br><small>Cargo</small></div>
+      </div>
+      <div class="depo-item">
+        <video controls>
+          <source src="assets/depoimento-3.mp4" type="video/mp4">
+        </video>
+        <div class="depo-caption">Nome<br><small>Cargo</small></div>
+      </div>
+      <div class="depo-item">
+        <video controls>
+          <source src="assets/depoimento-4.mp4" type="video/mp4">
+        </video>
+        <div class="depo-caption">Nome<br><small>Cargo</small></div>
+      </div>
+      <div class="depo-item">
+        <video controls>
+          <source src="assets/depoimento-5.mp4" type="video/mp4">
+        </video>
+        <div class="depo-caption">Marcelo Tanner<br><small>VP Vivo</small></div>
+      </div>
+      <div class="depo-item">
+        <video controls>
+          <source src="assets/depoimento-6.mp4" type="video/mp4">
+        </video>
+        <div class="depo-caption">Nome<br><small>Cargo</small></div>
+      </div>
+      <div class="depo-item">
+        <video controls>
+          <source src="assets/depoimento-7.mp4" type="video/mp4">
+        </video>
+        <div class="depo-caption">Marcelo Tanner & Paula<br><small>VP Vivo</small></div>
       </div>
     </div>
   </div>
